@@ -1,0 +1,147 @@
+.welcome {
+    height: 50vh;
+    background-color: var(--bg-primary);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1 {
+    color: var(--text-white);
+    text-align: center;
+    
+}
+
+@media (max-width:768px) {
+    .welcome h1 {
+        font-size: 2rem;
+    }
+}
+
+.container .grid {
+    padding:var(--spacing-medium) var(--spacing-small);
+}
+
+.contact h2 {
+    color:var(--bg-primary);
+    text-align: center;
+    padding:var(--spacing-large) 0;
+}
+
+.contact p {
+    font-size: var(--fs-medium);
+    margin-bottom:var(--spacing-medium);
+}
+
+.contact {
+    margin-bottom: var(--spacing-small);
+}
+
+ul p {
+    font-size: var(--fs-medium);
+}
+    
+ul {
+    margin-top: var(--spacing-small);
+} 
+
+.contact .material-icons {
+    margin-top:var(--spacing-medium);
+    margin-right:var(--spacing-tiny);
+}
+
+.contact a, .description {
+    font-size: var(--fs-medium);
+    margin-top:var(--spacing-large);
+    margin-bottom:var(--spacing-medium);
+    color:var(--text-gray);
+}
+
+form label {
+    font-size: var(--fs-medium);
+    padding:var(--spacing-small) 0;
+}
+
+.line {
+    border:1px solid var(--bg-secondary);
+    background-color: var(--bg-primary);
+    width:600px;
+}
+
+input {
+    width:500px;
+    height:30px;  
+    color:var(--text-gray);
+}
+
+#message {
+    height:100px;
+    width:500px;
+}
+
+input[type=submit] {
+    margin-top:var(--spacing-large);
+    width:100px;
+    border:1px solid var(--button-color);
+    border-radius:5px;
+    padding:var(--spacing-small);
+    background-color: var(--button-color);
+    color:var(--text-white);
+}
+
+.contact {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.contact-wrapper ul, .contact-wrapper form {
+    width:50%;
+}
+
+li {
+    display:flex;
+    justify-content: space-between;   
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    padding-left:var(--spacing-xl);
+    margin-top:var(--spacing-large);   
+}
+
+@media (max-width:922px) {
+    .contact-wrapper ul, .contact-wrapper form {
+        width:100%;
+    }
+
+    .contact-wrapper form {
+        margin-left:-40px;
+    }    
+}
+
+@media (max-width:768px) {
+    .contact-wrapper ul, .contact-wrapper form {
+        width:100%;
+    }
+
+    .contact-wrapper form {
+        margin-left:-40px;
+    }
+}
+
+@media (max-width:576px) {
+    .contact-wrapper ul, .contact-wrapper form {
+        width:100%;
+    }
+
+    .contact-wrapper form {
+        margin-left:-40px;
+    }
+
+    .line, input, #message {
+        width:400px;
+    }
+}
+

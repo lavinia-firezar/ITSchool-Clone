@@ -1,0 +1,119 @@
+.welcome {
+    height:50vh;
+    background-color: var(--bg-primary);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome h1 {
+    color: var(--text-light);
+}
+
+.trainings .container.grid {
+    padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.trainings h2 {
+    padding: calc(2*var(--spacing-medium));
+    color: var(--bg-primary);
+    text-align:center;
+}
+
+.trainings p {
+    font-size:var(--fs-medium);
+    text-align:center;
+    padding:0 var(--spacing-medium);
+}
+
+.trainings-container {
+    display:flex;
+    flex-wrap: wrap;       
+}
+
+.training-wrapper {
+    /* Latimea cursului,care va trece pe randul urmator in cazul in care pagina se micsoreaza  */
+    width: calc(100% / 3);
+    /* Padding - pentru a avea distanta intre cursuri,carduri */
+    padding:var(--spacing-large) var(--spacing-small);  
+}
+
+.trainings-container .training {
+    width:100%;
+    min-height:400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* Padding - pentru a mari conturul cardului */
+    padding-left: var(--spacing-tiny);
+    position:relative;
+}
+
+.training img {
+    width:100%;
+    height:auto;
+    margin-top:var(--spacing-tiny);
+    /* padding - pentru a mari marginea conturului din dreapta astfel incat sa cuprinda si imaginea */
+    padding-right: var(--spacing-small);
+    position:absolute;
+}
+
+.image-wrapper {
+    width: calc(100% / 3);
+}
+
+.content {
+    margin-top:230px;
+}
+
+.trainings-container span img {
+    width:100px;
+    height:auto;
+    padding-left:var(--spacing-medium);
+}
+
+.training h3 {
+    margin-left:-10px;
+    padding:var(--spacing-medium);
+}
+
+.training .material-icons, .certificare {
+    padding-left:var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
+}
+
+.training span, .certificare {
+    font-size: var(--fs-medium);
+    color: var(--text-primary); 
+}
+
+.training .material-icons {
+    color: var(--text-primary);
+}
+
+.training a {
+    font-size:var(--fs-medium);
+    background-color: var(--button-color);
+    color:var(--text-white);
+    text-align:center;
+    margin-left:var(--spacing-small);
+    margin-bottom:var(--spacing-large);
+    width:100px;
+    border-radius:5px;
+    padding:var(--spacing-small);
+} 
+
+@media (max-width: 922px) {
+    .training-wrapper {
+        width:50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .training-wrapper {
+        width:100%;
+    }
+
+    .welcome h1 {
+        font-size:2rem;
+    }
+}
